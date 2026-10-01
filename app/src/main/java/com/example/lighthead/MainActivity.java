@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ConstraintLayout bgElement = (ConstraintLayout)
+        RelativeLayout bgElement = (RelativeLayout)
                 findViewById(R.id.activity_main);
 
-        bgElement.setBackgroundColor(Color.WHITE);
+        bgElement.setBackgroundColor(Color.BLUE);
 
         myButtonListenerMethod();
     }
@@ -36,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                ConstraintLayout bgElement =
-                        (ConstraintLayout) findViewById(R.id.activity_main);
+                RelativeLayout bgElement =
+                        (RelativeLayout) findViewById(R.id.activity_main);
 
                 int color = ((ColorDrawable)
                         bgElement.getBackground()).getColor();
