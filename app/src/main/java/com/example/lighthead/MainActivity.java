@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         RelativeLayout bgElement = (RelativeLayout)
                 findViewById(R.id.activity_main);
 
-        bgElement.setBackgroundColor(Color.BLUE);
+        bgElement.setBackgroundColor(Color.BLACK);
 
         myButtonListenerMethod();
     }
